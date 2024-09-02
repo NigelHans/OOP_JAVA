@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class GettingInputs {
+    public static void main(String[] args) {
+       
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the year: ");
+        int year = scanner.nextInt(); //nextInt is used to read the users input as an integer
+        scanner.nextLine(); //Consume newline character from the input buffer
+
+        System.out.print("Enter the genre: ");
+        String genre = scanner.nextLine();
+
+        System.out.print("Enter the album: ");
+        String album = scanner.nextLine();
+
+        System.out.print("Enter the song title: ");
+        String title = scanner.nextLine();
+
+        System.out.print("Enter the artist: ");
+        String artists = scanner.nextLine();
+
+        //The Results of the users inputs
+        System.out.println("---------------------");
+        System.out.println("SONG DETAILS");
+        System.out.println("---------------------");
+        System.out.println("Year Released: " + year);
+        System.out.println("Genre: " + genre);
+        System.out.println("Album: " + album);
+        System.out.println("Title: " + title);
+        System.out.println("Artist: " + artists);
+
+        scanner.close();
+    }
+}
