@@ -24,5 +24,7 @@ public class getArrayMean {
         double mean = GetArrayMean(numbers);
 
         System.out.printf("Mean of array is: %.2f%n", mean);
+        
+        input.close();
     }
 }
