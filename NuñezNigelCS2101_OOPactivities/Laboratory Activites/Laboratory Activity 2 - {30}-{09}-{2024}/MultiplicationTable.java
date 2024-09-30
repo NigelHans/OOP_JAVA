@@ -26,5 +26,7 @@ public class MultiplicationTable {
         int maxNumber = scanner.nextInt();
 
         getMultiplicationTable(maxNumber);
+
+        input.close();
     }
 }
