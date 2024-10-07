@@ -8,7 +8,7 @@ public class Car {
     public Car(String color, double price, char size) {
         this.color = color;
         this.price = price;
-        this.size = size;
+        this.size = Character.toUpperCase(size);
     }
 
     //Getter for Color, Price, and Size
@@ -45,8 +45,11 @@ public class Car {
         String sizeDescriptor = "";
         switch (size) {
             case 'S': sizeDescriptor = "small"; 
-            case 'M': sizeDescriptor = "medium";  
+            break;
+            case 'M': sizeDescriptor = "medium"; 
+            break;
             case 'L': sizeDescriptor = "large"; 
+            break;
         }
 
         return "Car (" + color + ") - P" + String.format("%.2f", price) + " - " + sizeDescriptor;
